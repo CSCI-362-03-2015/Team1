@@ -1,0 +1,9 @@
+/tor/src/or/status.c ( bytes to usage can give us 3 test cases?)
+
+/tor/src/common/util.c (has multiple testable functions that we can write many different tests we can create).
+
+/tor/src/ext/strlcat.c
+
+/tor/src/ext/strlcpy.c
+
+/tor/src/common/log.c (should have a plethora of results.)
