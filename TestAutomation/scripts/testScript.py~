@@ -1,0 +1,23 @@
+import os
+import unittest
+import subprocess
+
+def main():
+
+    tests=[]
+    os.chdir("/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/")
+    for file in os.listdir("testCases"):
+        if file.endswith(".txt"):
+            print(file)
+            with open(os.getcwd()+"/testCases/"+file, "r") as f:
+                i =0
+                lines =[]
+                for line in f:
+                    lines.append(line)
+                    i = i+1
+                print("this is test case #: "+lines[0].strip('\n'))
+                print("this will be "+lines[1].strip('\n'))
+            subprocess.call(line[5])
+            
+
+main()
