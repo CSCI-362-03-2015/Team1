@@ -1,0 +1,7 @@
+1
+Testing round_to_next_multiple_of
+util.c
+unsgined round_to_next_multiple_of(unsinged number, unsigned divisor)
+gcc TestAutomation/testCaseExecutables/Driver1.c -o Driver1 & ./TestAutomation/testCaseExecutables/Driver1
+16
+
