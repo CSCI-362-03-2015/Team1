@@ -19,12 +19,27 @@ def main():
             with open(os.getcwd()+"/testCases/"+file, "r") as f:
                 i =0
                 lines =[]
+                path = ""
                 for line in f:
                     lines.append(line)
                     i = i+1
                 print("this is test case #: "+lines[0].strip('\n'))
                 tests.append(lines[0])
                 print("this will be "+lines[1].strip('\n'))
+                path = findComponent(lines[2].strip('\n'))
+                
+
+def findComponent(component):
+    path =""
+    print("searching for " + component)
+    for (root,dirs,files) in os.walk("./testCasesExecutables"):
+        for i in files:
+            if i == component:
+                path=(root)
+                print(root)
+                
+    return path
+    
                 
             
 
