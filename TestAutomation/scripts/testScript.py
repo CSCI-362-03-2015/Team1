@@ -31,12 +31,27 @@ def main():
                 subprocess.call([path+"/a.out", a, b])
                 answer = findAnswer(lines[0].strip('\n'))
                 print("program gave us: " +answer)
-                if answer ==(lines[5].strip('\n')):
-                    print("This test has passed")
-                else:
-                    print("This test has failed")
-            print('\n')
+                with open("./temp/report.txt","a+") as report:
+                    report.write("test ID:" + lines[0])
+                    report.write("requirement being tested:" + lines[1])
+                    report.write("Component being tested: " +lines[2])
+                    report.write("Method being tested: " +lines[3])
+                    report.write("Inputs used for testing: " +lines[4])
+                    report.write("Expected output: "+lines[5])
+                    
+                    if answer ==(lines[5].strip('\n')):
+                        print("This test has passed")
+                        report.write("The outcome was: " + answer+"\n")
+                        report.write("The test was successful")
+                        report.write("\n \n")
+                    else:
+                        print("This test has failed")
+                        report.write("the outcome was: " + answer+"\n")
+                        report.write("The test was a failure")
+                        report.write("\n \n")
                 
+            print('\n')
+    subprocess.call(["see", "./temp/report.txt"])
                 
 
 
