@@ -1,0 +1,7 @@
+7
+Testing tor_strndup_ to ensure correct results
+util.c
+tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
+, 0
+
+

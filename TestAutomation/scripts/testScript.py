@@ -35,32 +35,45 @@ def main():
                     print("This test has passed")
                 else:
                     print("This test has failed")
+            print('\n')
                 
                 
 
 
 def findComponent(case):
     path =""
+    driver = 0
     print("searching for test case "+case+ " driver")
+    if( case == '1' or case == '2'):
+        driver = 1
+    elif(case == '3' or case == '4' or case=='5' or case=='6' or case=='7'):
+        driver = 2
+
     for (root,dirs,files) in os.walk("./testCasesExecutables/"):
         for i in dirs:
-            if i == "testcase"+case:
+            if i == "testcase"+ str(driver):
                 path=(root+i)
                 print("component found in " + path)
                 
     return path
     
-def findAnswer(testnumber):
+def findAnswer(case):
     answer=""
+    found = False
+    if( case == '1' or case == '2'):
+        driver = 1
+    elif(case == '3' or case == '4' or case=='5' or case=='6' or case=='7'):
+        driver = 2
     for (root,dirs,files) in os.walk("./temp"):
         for i in files:
-            if i == "TestCase"+testnumber+".txt":
+            if i == "TestCase"+str(driver)+".txt":
                 path=(root)
                 print("answer found in " + path)
-                with open(path+"/TestCase"+testnumber+".txt", "r") as f:
+                with open(path+"/TestCase"+str(driver)+".txt", "r") as f:
                     for line in f:
                         answer=line.strip('\n')
-    if answer=="":
+                found = True
+    if found == False :
         print("no answer found")
     return answer
     
