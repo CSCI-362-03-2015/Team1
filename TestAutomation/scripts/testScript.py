@@ -9,7 +9,7 @@ def delTemp():
 
 def main():
 
-    #delTemp()
+    delTemp()
     tests=[]
     #changes to the TestAutomation directory
     os.chdir("../")
@@ -26,35 +26,42 @@ def main():
                 print("this is test case #: "+lines[0].strip('\n'))
                 tests.append(lines[0])
                 print("this will be "+lines[1].strip('\n'))
-                path = findComponent(lines[2].strip('\n'))
-                root = (os.getcwd()+path.strip('.'))
-                print(root)
-                subprocess.call([root+"/a.out", "4","4"])
-                print(findAnswer(lines[0].strip('\n')))
+                path = findComponent(lines[0].strip('\n'))
+                a,b =lines[4].split(',')
+                subprocess.call([path+"/a.out", a, b])
+                answer = findAnswer(lines[0].strip('\n'))
+                print("program gave us: " +answer)
+                if answer ==(lines[5].strip('\n')):
+                    print("This test has passed")
+                else:
+                    print("This test has failed")
+                
+                
 
 
-def findComponent(component):
+def findComponent(case):
     path =""
-    print("searching for " + component)
-    for (root,dirs,files) in os.walk("./testCasesExecutables"):
-        for i in files:
-            if i == component:
-                path=(root)
-                print("component found in " + root)
+    print("searching for test case "+case+ " driver")
+    for (root,dirs,files) in os.walk("./testCasesExecutables/"):
+        for i in dirs:
+            if i == "testcase"+case:
+                path=(root+i)
+                print("component found in " + path)
                 
     return path
     
 def findAnswer(testnumber):
-    
+    answer=""
     for (root,dirs,files) in os.walk("./temp"):
         for i in files:
-            if i == "testcase"+testnumber+".txt":
+            if i == "TestCase"+testnumber+".txt":
                 path=(root)
                 print("answer found in " + path)
-                with open(path+"/testcase"+testnumber+".txt", "r") as f:
+                with open(path+"/TestCase"+testnumber+".txt", "r") as f:
                     for line in f:
                         answer=line.strip('\n')
-                
+    if answer=="":
+        print("no answer found")
     return answer
     
             

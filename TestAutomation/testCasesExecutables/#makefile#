@@ -1,3 +1,0 @@
-CXX = gcc
-
-wrapper: wrapper.o
