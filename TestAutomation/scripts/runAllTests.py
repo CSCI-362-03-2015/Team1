@@ -70,6 +70,7 @@ def findComponent(case):
             if i == "testcase"+ str(driver):
                 path=(root+i)
                 print("component found in " + path)
+                subprocess.call(["gcc", "./testCasesExecutables/testcase"+str(driver)+"/Driver"+str(driver)+".c","-w","-o", os.getcwd()+path.strip('.')+"/a.out"])
                 
     return path
     
