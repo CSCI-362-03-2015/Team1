@@ -27,7 +27,7 @@ def main():
                 print("this is test case #: "+lines[0].strip('\n'))
                 tests.append(lines[0])
                 print("this will be "+lines[1].strip('\n'))
-                path = findComponent(lines[0].strip('\n'))
+                path = findComponent(lines[2].strip('\n'))
                 a,b =lines[4].split(',')
                 subprocess.call([path+"/a.out", a, b])
                 answer = findAnswer(lines[0].strip('\n'))
@@ -56,14 +56,13 @@ def main():
                 
 
 
-def findComponent(case):
+def findComponent(com):
     path =""
     driver = 0
-    #todo: make independent of the case name, switch based on method name instead?
     print("searching for test case "+case+ " driver")
-    if( case == '1' or case == '2'):
+    if( component == 'util.c'):
         driver = 1
-    elif(case == '3' or case == '4' or case=='5' or case=='6' or case=='7'):
+    elif(component==):
         driver = 2
 
     for (root,dirs,files) in os.walk("./testCasesExecutables/"):
