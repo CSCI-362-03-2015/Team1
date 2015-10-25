@@ -1,6 +1,7 @@
 import os
 import unittest
 import subprocess
+from time import localtime, asctime
 
 def delTemp():
      #this portion empties the temp directory 
@@ -33,7 +34,8 @@ def main():
                 answer = findAnswer(lines[0].strip('\n'))
                 print("program gave us: " +answer)
                 with open("./reports/report.html","a+") as report:
-                    report.write("test ID:" + lines[0]+"<br>")
+                    report.write("Test ID:" + lines[0]+"<br>")
+                    report.write("Time stamp: "+ asctime(localtime())+"<br>")
                     report.write("requirement being tested:" + lines[1]+"<br>")
                     report.write("Component being tested: " +lines[2]+"<br>")
                     report.write("Method being tested: " +lines[3]+"<br>")
