@@ -5,7 +5,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* tor's build directory */
-#define BUILDDIR "/home/mister/Programs/CSCI362/tor"
+#define BUILDDIR "/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project"
 
 /* tor's configuration directory */
 #define CONFDIR "/usr/local/etc/tor"

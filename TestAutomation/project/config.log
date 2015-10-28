@@ -33,6 +33,11 @@ PATH: /usr/sbin
 PATH: /usr/bin
 PATH: /sbin
 PATH: /bin
+PATH: /usr/games
+PATH: /usr/local/games
+PATH: /home/mister/netbeans-8.0.2/bin/
+PATH: /home/mister/Pycharm/bin/
+PATH: /home/mister/cLion/bin/
 
 
 ## ----------- ##
@@ -586,8 +591,8 @@ configure:6633: $? = 0
 configure:6650: result: none required
 configure:6658: checking for library containing dlopen
 configure:6689: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c  >&5
-/tmp/cc2Yf6Ng.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:33: undefined reference to `dlopen'
+/tmp/cciMrzLz.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:33: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:6689: $? = 1
 configure: failed program was:
@@ -640,8 +645,8 @@ configure:6802: $? = 0
 configure:6819: result: none required
 configure:6832: checking for library containing pthread_create
 configure:6863: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -ldl  >&5
-/tmp/ccvB33Tp.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:33: undefined reference to `pthread_create'
+/tmp/ccabsbEa.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:33: undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
 configure:6863: $? = 1
 configure: failed program was:
@@ -690,8 +695,8 @@ configure:6919: $? = 0
 configure:6936: result: none required
 configure:7007: checking for _NSGetEnviron
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccvwZBVF.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:56: undefined reference to `_NSGetEnviron'
+/tmp/cc6qIBhA.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:56: undefined reference to `_NSGetEnviron'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -817,8 +822,8 @@ configure:7007: $? = 0
 configure:7007: result: yes
 configure:7007: checking for issetugid
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccuBay8S.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:71: undefined reference to `issetugid'
+/tmp/cccLDtIo.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:71: undefined reference to `issetugid'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -902,8 +907,8 @@ configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  c
 conftest.c:60:6: warning: conflicting types for built-in function 'llround' [enabled by default]
  char llround ();
       ^
-/tmp/ccqE0j8V.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:71: undefined reference to `llround'
+/tmp/cc2zsqpt.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:71: undefined reference to `llround'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -991,8 +996,8 @@ configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  c
 conftest.c:61:6: warning: conflicting types for built-in function 'lround' [enabled by default]
  char lround ();
       ^
-/tmp/ccsC02f6.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:72: undefined reference to `lround'
+/tmp/cc4eCIhF.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:72: undefined reference to `lround'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1090,8 +1095,8 @@ configure:7007: $? = 0
 configure:7007: result: yes
 configure:7007: checking for readpassphrase
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccq2Kzpx.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:76: undefined reference to `readpassphrase'
+/tmp/ccr2UOtY.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:76: undefined reference to `readpassphrase'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1180,8 +1185,8 @@ configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  c
 conftest.c:65:6: warning: conflicting types for built-in function 'rint' [enabled by default]
  char rint ();
       ^
-/tmp/ccJTVq5u.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:76: undefined reference to `rint'
+/tmp/ccjycp72.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:76: undefined reference to `rint'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1279,8 +1284,8 @@ configure:7007: $? = 0
 configure:7007: result: yes
 configure:7007: checking for strlcat
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccDDG6IQ.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:79: undefined reference to `strlcat'
+/tmp/ccNmtpUr.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:79: undefined reference to `strlcat'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1369,8 +1374,8 @@ configure: failed program was:
 configure:7007: result: no
 configure:7007: checking for strlcpy
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccJCjZ7V.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:79: undefined reference to `strlcpy'
+/tmp/ccrHwkqx.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:79: undefined reference to `strlcpy'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1495,8 +1500,8 @@ configure:7007: $? = 0
 configure:7007: result: yes
 configure:7007: checking for _vscprintf
 configure:7007: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  conftest.c -lpthread -ldl  >&5
-/tmp/ccGRLqeC.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:88: undefined reference to `_vscprintf'
+/tmp/cc46vTdf.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:88: undefined reference to `_vscprintf'
 collect2: error: ld returned 1 exit status
 configure:7007: $? = 1
 configure: failed program was:
@@ -1624,8 +1629,8 @@ configure:7455: $? = 0
 configure:7455: result: yes
 configure:7455: checking for evutil_secure_rng_set_urandom_device_file
 configure:7455: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -levent   -lpthread -ldl  >&5
-/tmp/ccIJZvad.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:91: undefined reference to `evutil_secure_rng_set_urandom_device_file'
+/tmp/cc9kEhGH.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:91: undefined reference to `evutil_secure_rng_set_urandom_device_file'
 collect2: error: ld returned 1 exit status
 configure:7455: $? = 1
 configure: failed program was:
@@ -1917,8 +1922,8 @@ configure:7634: gcc -std=gnu99 -o conftest -g -O2  -I${top_srcdir}/src/common  c
 conftest.c:68:6: warning: conflicting types for built-in function 'pow' [enabled by default]
  char pow ();
       ^
-/tmp/ccXD9b0G.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:72: undefined reference to `pow'
+/tmp/cc5ZQ85p.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:72: undefined reference to `pow'
 collect2: error: ld returned 1 exit status
 configure:7634: $? = 1
 configure: failed program was:
@@ -2039,8 +2044,8 @@ configure:8054: $? = 0
 configure:8054: result: yes
 configure:8077: checking for SSL_SESSION_get_master_key
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/ccbbDaSs.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `SSL_SESSION_get_master_key'
+/tmp/cc8Tngn6.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `SSL_SESSION_get_master_key'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2146,8 +2151,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8077: checking for SSL_get_server_random
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/cc1ezUCw.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `SSL_get_server_random'
+/tmp/ccgvx5Yc.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `SSL_get_server_random'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2253,8 +2258,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8077: checking for SSL_get_client_ciphers
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/cchFZyAD.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `SSL_get_client_ciphers'
+/tmp/cc4clTDg.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `SSL_get_client_ciphers'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2360,8 +2365,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8077: checking for SSL_get_client_random
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/cc05ap7z.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `SSL_get_client_random'
+/tmp/cc82pDBp.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `SSL_get_client_random'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2467,8 +2472,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8077: checking for SSL_CIPHER_find
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/ccmqweBI.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `SSL_CIPHER_find'
+/tmp/ccKgunkw.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `SSL_CIPHER_find'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2574,8 +2579,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8077: checking for TLS_method
 configure:8077: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/ccapzvkM.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `TLS_method'
+/tmp/ccU7AwUD.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `TLS_method'
 collect2: error: ld returned 1 exit status
 configure:8077: $? = 1
 configure: failed program was:
@@ -2681,8 +2686,8 @@ configure: failed program was:
 configure:8077: result: no
 configure:8090: checking for EVP_PBE_scrypt
 configure:8090: gcc -std=gnu99 -o conftest -g -O2   -I${top_srcdir}/src/common   conftest.c -lssl -lcrypto -lpthread -ldl  >&5
-/tmp/ccybjQ1U.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:96: undefined reference to `EVP_PBE_scrypt'
+/tmp/ccyUDObI.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:96: undefined reference to `EVP_PBE_scrypt'
 collect2: error: ld returned 1 exit status
 configure:8090: $? = 1
 configure: failed program was:
@@ -3125,8 +3130,8 @@ configure:9339: checking for seccomp.h
 configure:9339: result: no
 configure:9349: checking for library containing seccomp_init
 configure:9380: gcc -std=gnu99 -o conftest -g -O2 -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector -fwrapv --param ssp-buffer-size=1 -fPIE -fasynchronous-unwind-tables  -I${top_srcdir}/src/common  -pie -z relro -z now -rdynamic conftest.c -lpthread -ldl  >&5
-/tmp/cclpNYSW.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:73: undefined reference to `seccomp_init'
+/tmp/ccPkl2aS.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:73: undefined reference to `seccomp_init'
 collect2: error: ld returned 1 exit status
 configure:9380: $? = 1
 configure: failed program was:
@@ -3467,8 +3472,8 @@ configure:9411: checking for libscrypt.h
 configure:9411: result: no
 configure:9421: checking for library containing libscrypt_scrypt
 configure:9452: gcc -std=gnu99 -o conftest -g -O2 -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector -fwrapv --param ssp-buffer-size=1 -fPIE -fasynchronous-unwind-tables  -I${top_srcdir}/src/common  -pie -z relro -z now -rdynamic conftest.c -lpthread -ldl  >&5
-/tmp/cc5mey3l.o: In function `main':
-/home/mister/Programs/CSCI362/tor/conftest.c:73: undefined reference to `libscrypt_scrypt'
+/tmp/cccaMkW9.o: In function `main':
+/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/conftest.c:73: undefined reference to `libscrypt_scrypt'
 collect2: error: ld returned 1 exit status
 configure:9452: $? = 1
 configure: failed program was:
@@ -11334,7 +11339,7 @@ tor_cv_twos_complement=yes
 ## ----------------- ##
 
 A2X='/usr/bin/a2x'
-ACLOCAL='${SHELL} /home/mister/Programs/CSCI362/tor/missing aclocal-1.14'
+ACLOCAL='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -11345,12 +11350,12 @@ AM_DEFAULT_VERBOSITY='0'
 AM_V='$(V)'
 AR='ar'
 ASCIIDOC='/usr/bin/asciidoc'
-AUTOCONF='${SHELL} /home/mister/Programs/CSCI362/tor/missing autoconf'
-AUTOHEADER='${SHELL} /home/mister/Programs/CSCI362/tor/missing autoheader'
-AUTOMAKE='${SHELL} /home/mister/Programs/CSCI362/tor/missing automake-1.14'
+AUTOCONF='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf'
+AUTOHEADER='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader'
+AUTOMAKE='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14'
 AWK='gawk'
 BINDIR='/usr/local/bin'
-BUILDDIR='/home/mister/Programs/CSCI362/tor'
+BUILDDIR='/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project'
 BUILD_CURVE25519_DONNA_C64_FALSE='#'
 BUILD_CURVE25519_DONNA_C64_TRUE=''
 BUILD_CURVE25519_DONNA_FALSE=''
@@ -11390,7 +11395,7 @@ LIBSYSTEMD209_LIBS=''
 LOCALSTATEDIR='/usr/local/var'
 LOGFACILITY=''
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /home/mister/Programs/CSCI362/tor/missing makeinfo'
+MAKEINFO='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo'
 MINIUPNPC_FALSE=''
 MINIUPNPC_TRUE='#'
 MKDIR_P='/bin/mkdir -p'
@@ -11484,7 +11489,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/mister/Programs/CSCI362/tor/install-sh'
+install_sh='${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
@@ -11662,7 +11667,143 @@ target_alias=''
 #define HAVE_MACRO__func__ 1
 #define HAVE_MACRO__FUNCTION__ 1
 #define HAVE_EXTERN_ENVIRON_DECLARED 1
-#define BUILDDIR "/home/mister/Programs/CSCI362/tor"
+#define BUILDDIR "/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project"
 #define CONFDIR "/usr/local/etc/tor"
 
 configure: exit 0
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor.1
+
+on DJHiTek
+
+config.status:1084: creating doc/tor.1
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor-gencert.1
+
+on DJHiTek
+
+config.status:1084: creating doc/tor-gencert.1
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor-resolve.1
+
+on DJHiTek
+
+config.status:1084: creating doc/tor-resolve.1
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/torify.1
+
+on DJHiTek
+
+config.status:1084: creating doc/torify.1
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor.html
+
+on DJHiTek
+
+config.status:1084: creating doc/tor.html
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor-gencert.html
+
+on DJHiTek
+
+config.status:1084: creating doc/tor-gencert.html
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/tor-resolve.html
+
+on DJHiTek
+
+config.status:1084: creating doc/tor-resolve.html
+
+## ---------------------- ##
+## Running config.status. ##
+## ---------------------- ##
+
+This file was extended by tor config.status 0.2.7.2-alpha-dev, which was
+generated by GNU Autoconf 2.69.  Invocation command line was
+
+  CONFIG_FILES    = 
+  CONFIG_HEADERS  = 
+  CONFIG_LINKS    = 
+  CONFIG_COMMANDS = 
+  $ ./config.status -q --file=doc/torify.html
+
+on DJHiTek
+
+config.status:1084: creating doc/torify.html

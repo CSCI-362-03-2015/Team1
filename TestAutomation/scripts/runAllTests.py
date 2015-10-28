@@ -8,6 +8,9 @@ def delTemp():
     for j in os.listdir("./temp/"):
         os.remove("./temp/" + j)
 
+def delReport():
+    #this portion empties the report directory and creates a new report file.
+
 def main():
 
     delTemp()
@@ -30,7 +33,9 @@ def main():
                 print("this will be "+lines[1].strip('\n'))
                 path = findComponent(lines[0].strip('\n'))
                 a,b =lines[4].split(',')
+
                 subprocess.call([path+"/a.out", a, b])
+
                 answer = findAnswer(lines[0].strip('\n'))
                 print("program gave us: " +answer)
                 with open("./reports/report.html","a+") as report:
@@ -45,12 +50,12 @@ def main():
                     if answer ==(lines[5].strip('\n')):
                         print("This test has passed")
                         report.write("The outcome was: " + answer+"<br>")
-                        report.write("The test was  <font color=\"green\">successful</font>"+"<br>")
+                        report.write("The test  <font color=\"green\">passed</font>"+"<br>")
                         report.write("<br><br>")
                     else:
                         print("This test has failed")
                         report.write("the outcome was: " + answer+"<br>")
-                        report.write("The test was a <font color=\"red\">failure</font>"+"<br>")
+                        report.write("The test <font color=\"red\">failed</font>"+"<br>")
                         report.write("<br><br>")
                 
             print('\n')

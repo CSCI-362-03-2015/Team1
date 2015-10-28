@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/mister/Programs/CSCI362/tor'
+ac_pwd='/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -634,7 +634,7 @@ S["LIBOBJS"]=""
 S["LOCALSTATEDIR"]="/usr/local/var"
 S["BINDIR"]="/usr/local/bin"
 S["CONFDIR"]="/usr/local/etc/tor"
-S["BUILDDIR"]="/home/mister/Programs/CSCI362/tor"
+S["BUILDDIR"]="/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project"
 S["LOGFACILITY"]=""
 S["CURVE25519_LIBS"]=""
 S["BUILD_CURVE25519_DONNA_C64_FALSE"]="#"
@@ -744,12 +744,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/mister/Programs/CSCI362/tor/install-sh"
-S["MAKEINFO"]="${SHELL} /home/mister/Programs/CSCI362/tor/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/mister/Programs/CSCI362/tor/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/mister/Programs/CSCI362/tor/missing automake-1.14"
-S["AUTOCONF"]="${SHELL} /home/mister/Programs/CSCI362/tor/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/mister/Programs/CSCI362/tor/missing aclocal-1.14"
+S["install_sh"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/install-sh"
+S["MAKEINFO"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14"
+S["AUTOCONF"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14"
 S["VERSION"]="0.2.7.2-alpha-dev"
 S["PACKAGE"]="tor"
 S["CYGPATH_W"]="echo"
@@ -992,7 +992,7 @@ D["HAVE_GETHOSTBYNAME_R_6_ARG"]=" 1"
 D["HAVE_MACRO__func__"]=" 1"
 D["HAVE_MACRO__FUNCTION__"]=" 1"
 D["HAVE_EXTERN_ENVIRON_DECLARED"]=" 1"
-D["BUILDDIR"]=" \"/home/mister/Programs/CSCI362/tor\""
+D["BUILDDIR"]=" \"/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project\""
 D["CONFDIR"]=" \"/usr/local/etc/tor\""
   for (key in D) D_is_set[key] = 1
   FS = ""
