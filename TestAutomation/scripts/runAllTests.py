@@ -10,10 +10,23 @@ def delTemp():
 
 def delReport():
     #this portion empties the report directory and creates a new report file.
+    for j in os.listdir("./reports/"):
+        os.remove("./reports/" + j)
+
+def buildTor():
+    os.chdir("./project/")
+    print(os.getcwd());
+    subprocess.call("bash configure", shell=True)
+    subprocess.call("make")
+    print(os.getcwd());
+    subprocess.call("sudo make install",shell=True)
+    os.chdir("../")
 
 def main():
 
     delTemp()
+    delReport()
+    #buildTor()
     tests=[]
     #changes to the TestAutomation directory
     os.chdir("./")
@@ -30,76 +43,61 @@ def main():
                     i = i+1
                 print("this is test case #: "+lines[0].strip('\n'))
                 tests.append(lines[0])
+                driver=lines[6].strip('\n')
                 print("this will be "+lines[1].strip('\n'))
-                path = findComponent(lines[0].strip('\n'))
                 a,b =lines[4].split(',')
+                
 
-                subprocess.call([path+"/a.out", a, b])
+                subprocess.call(["tor",driver, a, b])
 
-                answer = findAnswer(lines[0].strip('\n'))
+                answer = findAnswer(lines[6].strip('\n'))
                 print("program gave us: " +answer)
                 with open("./reports/report.html","a+") as report:
-                    report.write("Test ID:" + lines[0]+"<br>")
-                    report.write("Time stamp: "+ asctime(localtime())+"<br>")
-                    report.write("requirement being tested:" + lines[1]+"<br>")
-                    report.write("Component being tested: " +lines[2]+"<br>")
-                    report.write("Method being tested: " +lines[3]+"<br>")
-                    report.write("Inputs used for testing: " +lines[4]+"<br>")
-                    report.write("Expected output: "+lines[5]+"<br>")
+                    report.write("<style>table, th, td {border: 1px solid black;}</style>")
+                    report.write("<table><tr><td>Test ID: </td><td>" + lines[0]+"</td></tr>")
+                    report.write("<tr><td>Time stamp: </td><td>"+ asctime(localtime())+"</td></tr>")
+                    report.write("<tr><td>requirement being tested: </td><td>" + lines[1]+"</td></tr>")
+                    report.write("<tr><td>Component being tested: </td><td>" +lines[2]+"</td></tr>")
+                    report.write("<tr><td>Method being tested: </td><td>" +lines[3]+"</td></tr>")
+                    report.write("<tr><td>Inputs used for testing: </td><td>" +lines[4]+"</td></tr>")
+                    report.write("<tr><td>Expected output: </td><td>"+lines[5]+"</td></tr>")
                     
-                    if answer ==(lines[5].strip('\n')):
+                    if answer ==("no answer found"):
+                        print("no answer found!")
+                        report.write("<tr><td> <font color=\"blue\"> not implemented</font></td></td>")
+                        report.write("</table><br>")
+
+                    elif answer ==(lines[5].strip('\n')):
                         print("This test has passed")
-                        report.write("The outcome was: " + answer+"<br>")
-                        report.write("The test  <font color=\"green\">passed</font>"+"<br>")
-                        report.write("<br><br>")
+                        report.write("<tr><td>The outcome was: </td><td>" + answer+"</td></tr>")
+                        report.write("<tr><td>The test  <font color=\"green\">passed</font></td></tr>")
+                        report.write("</table><br>")
+                   
                     else:
                         print("This test has failed")
-                        report.write("the outcome was: " + answer+"<br>")
-                        report.write("The test <font color=\"red\">failed</font>"+"<br>")
-                        report.write("<br><br>")
+                        report.write("<tr><td>the outcome was: </td><td>" + answer+"</td></tr>")
+                        report.write("<tr><td>The test <font color=\"red\">failed</font></td></tr>")
+                        report.write("</table><br>")
                 
             print('\n')
     subprocess.call(["see", "./reports/report.html"])
                 
-
-
-def findComponent(case):
-    path =""
-    driver = 0
-    #todo: make independent of the case name, switch based on method name instead?
-    print("searching for test case "+case+ " driver")
-    if( case == '1' or case == '2'):
-        driver = 1
-    elif(case == '3' or case == '4' or case=='5' or case=='6' or case=='7'):
-        driver = 2
-
-    for (root,dirs,files) in os.walk("./testCasesExecutables/"):
-        for i in dirs:
-            if i == "testcase"+ str(driver):
-                path=(root+i)
-                print("component found in " + path)
-                subprocess.call(["gcc", "./testCasesExecutables/testcase"+str(driver)+"/Driver"+str(driver)+".c","-w","-o", os.getcwd()+path.strip('.')+"/a.out"])
-                
-    return path
     
 def findAnswer(case):
     answer=""
     found = False
-    if( case == '1' or case == '2'):
-        driver = 1
-    elif(case == '3' or case == '4' or case=='5' or case=='6' or case=='7'):
-        driver = 2
     for (root,dirs,files) in os.walk("./temp"):
         for i in files:
-            if i == "TestCase"+str(driver)+".txt":
+            if i == "TestCase"+str(case)+".txt":
                 path=(root)
                 print("answer found in " + path)
-                with open(path+"/TestCase"+str(driver)+".txt", "r") as f:
+                with open(path+"/TestCase"+str(case)+".txt", "r") as f:
                     for line in f:
                         answer=line.strip('\n')
                 found = True
     if found == False :
         print("no answer found")
+        answer="no answer found"
     return answer
     
             

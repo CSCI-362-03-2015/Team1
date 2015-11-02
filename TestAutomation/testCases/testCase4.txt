@@ -4,5 +4,4 @@ util.c
 tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
 qwerty, 0
 
-
-
+2

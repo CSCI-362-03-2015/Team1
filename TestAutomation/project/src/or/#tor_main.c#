@@ -82,6 +82,7 @@ main(int argc, char *argv[])
       
     default:
       printf("There hasnt been a matching driver implemented yet\n");
+      return ("X")
       break;
       
       return 1;

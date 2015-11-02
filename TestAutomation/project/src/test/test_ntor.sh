@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Validate Tor's ntor implementation.
 
 exitcode=0

@@ -4,3 +4,4 @@ util.c
 tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
 abcdefg, 5
 abcde
+2
