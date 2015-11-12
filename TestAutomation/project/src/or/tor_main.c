@@ -83,15 +83,15 @@ main(int argc, char *argv[])
       
     case 3:
       if (argc >2){
-	int ia=atoi(argv[2]);
-	int answer;
+	long long ia=atol(argv[2]);
+	long long answer;
 	
 	answer = round_to_power_of_2(ia);
 	
 	chdir("./temp");
 	FILE *file;
 	file = fopen("./TestCase3.txt", "w");
-	fprintf(file, "%i", answer);
+	fprintf(file, "%lld", answer);
 	fclose(file);
       }
       else
@@ -102,9 +102,7 @@ main(int argc, char *argv[])
       if (argc >2){
 	char a = argv[2][0];
 	int answer;
-	printf("%c", a);
 	answer = digit_to_num(a);
-	printf("%i",answer);
 	
 	chdir("./temp");
 	FILE *file;
@@ -121,7 +119,6 @@ main(int argc, char *argv[])
 	char* a = argv[2];
 	int answer;
 	answer = tor_strisnonupper(a);
-	printf("%i",answer);
 	
 	chdir("./temp");
 	FILE *file;
