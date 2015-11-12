@@ -1,7 +1,7 @@
 6
-Testing tor_strndup_ to ensure correct results
+To ensure given an input of 0, we receive default output of 1
 util.c
-tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
-saddasdf, -1
-error
-2
+uint64_t round_to_power_of_2(uint64_t u64)
+0,,
+1
+3

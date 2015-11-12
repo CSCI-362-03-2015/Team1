@@ -1,0 +1,7 @@
+23
+To ensure that given input of 0 the method returns 0 bits
+address.c
+int addr_mask_get_bits(uint32_t mask)
+0,, 
+0
+6

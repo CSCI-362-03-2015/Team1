@@ -1,0 +1,7 @@
+24
+Ensuring that given invalid input, the method returns -1
+address.c
+int addr_mask_get_bits(uint32_t mask)
+0x04A099B23,, 
+-1
+6

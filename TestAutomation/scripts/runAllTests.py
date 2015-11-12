@@ -26,7 +26,7 @@ def main():
 
     delTemp()
     delReport()
-    #buildTor()
+    buildTor()
     tests=[]
     #changes to the TestAutomation directory
     os.chdir("./")
@@ -45,7 +45,7 @@ def main():
                 tests.append(lines[0])
                 driver=lines[6].strip('\n')
                 print("this will be "+lines[1].strip('\n'))
-                a,b =lines[4].split(',')
+                a,b,c = lines[4].split(',')
                 
 
                 subprocess.call(["tor",driver, a, b])
@@ -64,7 +64,7 @@ def main():
                     
                     if answer ==("no answer found"):
                         print("no answer found!")
-                        report.write("<tr><td> <font color=\"blue\"> not implemented</font></td></td>")
+                        report.write("<tr><td><b> <font color=\"red\">results in a segmentation fault</font></b></td></td>")
                         report.write("</table><br>")
 
                     elif answer ==(lines[5].strip('\n')):

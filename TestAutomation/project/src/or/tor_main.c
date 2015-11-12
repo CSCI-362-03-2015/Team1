@@ -8,6 +8,7 @@
  * src/or/include.am, and is usually right.
  */
 #include <stdio.h>
+#include "util.h"
 const char tor_git_revision[] =
 #ifndef _MSC_VER
 #include "micro-revision.i"
@@ -51,38 +52,124 @@ main(int argc, char *argv[])
 	printf("there are not enough arguments to process this command");
       break;
       
-    /* case 2: */
-    /*   if (argc>3){ */
-    /* 	char in[MAX] = (argv[2]);  */
-    /* 	int n = atoi(argv[3]); */
-    /* 	printf("%s\n",s); */
-    /* 	printf("%i\n",n); */
-	
-    /* 	char *answer =""; */
-	
-    /* 	if (n ==0){ */
-    /* 	  answer="error\n"; */
-    /* 	} */
-    /* 	else if(n>0){ */
-    /* 	  *answer = tor_strndup_(in,1); */
-    /* 	  printf("this should output %s",answer); */
-	  
-    /* 	} */
-    /* 	printf("%i is the int\n", n); */
-    /* 	//printf("%S is the answer",answer); */
-    /* 	chdir("./temp"); */
-    /* 	FILE *file; */
-    /* 	file = fopen("./TestCase2.txt", "w"); */
-    /* 	fprintf(file, "%s", answer); */
-    /* 	fclose(file); */
-    /*   } */
-    /*   else  */
-    /* 	printf("there are not enough arguments included"); */
-    /*   break; */
+      /* case 2: */
+      /*   if (argc>3){ */
+      /* 	char in[MAX] = (argv[2]);  */
+      /* 	int n = atoi(argv[3]); */
+      /* 	printf("%s\n",s); */
+      /* 	printf("%i\n",n); */
       
+      /* 	char *answer =""; */
+      
+      /* 	if (n ==0){ */
+      /* 	  answer="error\n"; */
+      /* 	} */
+      /* 	else if(n>0){ */
+      /* 	  *answer = tor_strndup_(in,1); */
+      /* 	  printf("this should output %s",answer); */
+      
+      /* 	} */
+      /* 	printf("%i is the int\n", n); */
+      /* 	//printf("%S is the answer",answer); */
+      /* 	chdir("./temp"); */
+      /* 	FILE *file; */
+      /* 	file = fopen("./TestCase2.txt", "w"); */
+      /* 	fprintf(file, "%s", answer); */
+      /* 	fclose(file); */
+      /*   } */
+      /*   else  */
+      /* 	printf("there are not enough arguments included"); */
+      /*   break; */
+      
+    case 3:
+      if (argc >2){
+	int ia=atoi(argv[2]);
+	int answer;
+	
+	answer = round_to_power_of_2(ia);
+	
+	chdir("./temp");
+	FILE *file;
+	file = fopen("./TestCase3.txt", "w");
+	fprintf(file, "%i", answer);
+	fclose(file);
+      }
+      else
+	printf("there are not enough arguments to process this command");
+      break;
+ 
+    case 4:
+      if (argc >2){
+	char a = argv[2][0];
+	int answer;
+	printf("%c", a);
+	answer = digit_to_num(a);
+	printf("%i",answer);
+	
+	chdir("./temp");
+	FILE *file;
+	file = fopen("./TestCase4.txt", "w");
+	fprintf(file, "%i", answer);
+	fclose(file);
+      }
+      else
+	printf("there are not enough arguments to process this command");
+      break;
+
+    case 5:
+      if (argc >2){
+	char* a = argv[2];
+	int answer;
+	answer = tor_strisnonupper(a);
+	printf("%i",answer);
+	
+	chdir("./temp");
+	FILE *file;
+	file = fopen("./TestCase5.txt", "w");
+	fprintf(file, "%i", answer);
+	fclose(file);
+      }
+      else
+	printf("there are not enough arguments to process this command");
+      break;
+
+case 6:
+      if (argc >2){
+	int ia = (argv[2]);
+	int answer;
+	answer = addr_mask_get_bits(ia);
+	
+	chdir("./temp");
+	FILE *file;
+	file = fopen("./TestCase6.txt", "w");
+	fprintf(file, "%i", answer);
+	fclose(file);
+      }
+      else
+	printf("there are not enough arguments to process this command");
+      break;
+
+    case 7:
+      if(argc>2){
+	double da = atof(argv[2]);
+	int answer;
+	answer = tor_llround(da);
+	
+	chdir("./temp");
+	FILE *file;
+	file = fopen("./TestCase7.txt", "w");
+	fprintf(file, "%i", answer);
+	fclose(file);
+      }
+      else
+	printf("there are not enough arguments to process this command");
+      break;
+	
+
     default:
       printf("There hasnt been a matching driver implemented yet\n");
-      break;
+      return ("X");
+	break;
       
       return 1;
       //else

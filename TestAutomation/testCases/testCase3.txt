@@ -1,7 +1,7 @@
 3
-Testing tor_strndup_ to ensure correct results
+To ensure the function can properly round down to nearest log base 2 of a 64 bit integer given the integer slightly exceeds 2^63
 util.c
-tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
-abcdefg, 5
-abcde
-2
+uint64_t round_to_power_of_2(uint64_t u64)
+9223372036854776000,,
+63
+3

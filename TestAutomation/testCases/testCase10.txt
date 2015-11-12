@@ -1,0 +1,7 @@
+10
+given a char, return the char's numeric value
+util.c
+static int digit_to_num(char d)
+a,,
+error
+4

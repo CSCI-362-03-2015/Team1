@@ -1,0 +1,7 @@
+12
+checks if a string has any uppercase letters, returns 0 if it does
+util.c
+int tor_strisnonupper(const char *s)
+Apple,,
+0
+5

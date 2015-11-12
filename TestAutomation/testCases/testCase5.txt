@@ -1,7 +1,7 @@
 5
-Testing tor_strndup_ to ensure correct results
+To ensure the function can return correct power of 2 of a negative integer
 util.c
-tor_strndup_(const char *s, size_t n DMALLOC_PARAMS)
-, 5
-
-2
+uint64_t round_to_power_of_2(uint64_t u64)
+-256,,
+8
+3

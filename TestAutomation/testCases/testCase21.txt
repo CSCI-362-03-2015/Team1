@@ -1,0 +1,7 @@
+21
+Testing digit_to_num to ensure correct results
+util.c
+digit_to_num(char d)
+,,
+error
+4

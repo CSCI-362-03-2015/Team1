@@ -2927,7 +2927,7 @@ expand_filename(const char *filename)
 
 /** Helper: given an ASCII-encoded decimal digit, return its numeric value.
  * NOTE: requires that its input be in-bounds. */
-static int
+int
 digit_to_num(char d)
 {
   int num = ((int)d) - (int)'0';

@@ -1,0 +1,7 @@
+25
+Given the mask comes to the edge of a 32 bit hexidecimal, the method will return 32
+address.c
+int addr_mask_get_bits(uint32_t mask)
+0xFFFFFFFFu,, 
+32
+6
