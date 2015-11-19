@@ -132,9 +132,10 @@ main(int argc, char *argv[])
 
 case 6:
       if (argc >2){
-	int ia = (argv[2]);
-	int answer;
+	uint32_t ia = ((uint32_t)strtol(argv[2], NULL, 0));
+	uint32_t answer;
 	answer = addr_mask_get_bits(ia);
+	
 	
 	chdir("./temp");
 	FILE *file;

@@ -28,8 +28,13 @@ def main():
 
     delTemp()
     delReport()
-    buildTor()
+    #buildTor()
     tests=[]
+    testid=[]
+    req=[]
+    component=[]
+    method=[]
+    
     #changes to the TestAutomation directory
     os.chdir("./")
     print(os.getcwd())
