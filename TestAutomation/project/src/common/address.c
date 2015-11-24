@@ -1872,7 +1872,6 @@ addr_mask_get_bits(uint32_t mask)
   /*FAULT :: change (mask == 0xFFFFFFFFu) to (mask == 0x0FFFFFFFu) to inject fault*/
   if (mask == 0xFFFFFFFFu)
     return 32;
-  /*FAULT :: change ++i to i+=2 to inject fault*/
   for (i = 1; i<=32; ++i){
     if (mask == (uint32_t) ~((1u<<(32-i))-1)) {
       return i;
