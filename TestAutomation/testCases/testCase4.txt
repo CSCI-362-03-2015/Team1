@@ -1,7 +1,7 @@
 4
-To ensure basic functionality of the method being able to compute a power of 2 where the exponent is not base 2 itself and not 63
+To ensure basic functionality of the method being able to compute a power of 2 where the exponent is not 0, 62, or 63
 util.c
 uint64_t round_to_power_of_2(uint64_t u64)
 4244967300,,
-33
+4294967296
 3
