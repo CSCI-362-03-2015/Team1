@@ -1866,14 +1866,14 @@ int
 addr_mask_get_bits(uint32_t mask)
 {
   int i;
-  /*if (mask == 0) FAULT BELOW*/
-  if (mask == 1)
+  /*FAULT :: change (mask == 0) to (mask ==1) to inject fault*/
+  if (mask == 0)
     return 0;
-  /*if (mask == 0xFFFFFFFFu) FAULT BELOW*/
-  if (mask == 0x0FFFFFFFu)
+  /*FAULT :: change (mask == 0xFFFFFFFFu) to (mask == 0x0FFFFFFFu) to inject fault*/
+  if (mask == 0xFFFFFFFFu)
     return 32;
-  /*for (i=1; i<=32; ++i) FAULT BELOW*/
-  for (i = 1; i<=32; i+=2){
+  /*FAULT :: change ++i to i+=2 to inject fault*/
+  for (i = 1; i<=32; ++i){
     if (mask == (uint32_t) ~((1u<<(32-i))-1)) {
       return i;
     }
