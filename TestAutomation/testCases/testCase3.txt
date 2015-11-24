@@ -1,7 +1,7 @@
 3
-To ensure the function can properly roll over to 0 given the integer slightly exceeds 2^63
+To ensure the function properly rolls over past (2^63 - 1) given the integer exceeds 2^62
 util.c
 uint64_t round_to_power_of_2(uint64_t u64)
-9223372036854776000,,
-0
+8223372036854776000,,
+-9223372036854775808
 3
