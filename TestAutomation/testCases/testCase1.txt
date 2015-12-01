@@ -1,5 +1,5 @@
 1
-ensuring the correct output, the next multiple of the divisor from the number
+ensures an inputted integer rounds to the next multiple of the divisor
 util.c
 unsigned round_to_next_multiple_of(unsigned number, unsigned divisor)
 13,4,
