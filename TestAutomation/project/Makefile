@@ -1033,18 +1033,18 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-A2X = /usr/bin/a2x
-ACLOCAL = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14
+A2X = none
+ACLOCAL = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-ASCIIDOC = /usr/bin/asciidoc
-AUTOCONF = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf
-AUTOHEADER = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader
-AUTOMAKE = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14
+ASCIIDOC = none
+AUTOCONF = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf
+AUTOHEADER = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader
+AUTOMAKE = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14
 AWK = gawk
 BINDIR = /usr/local/bin
-BUILDDIR = /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project
+BUILDDIR = /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project
 CC = gcc -std=gnu99
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2 -D_FORTIFY_SOURCE=2 -fstack-protector-all -Wstack-protector -fwrapv --param ssp-buffer-size=1 -fPIE -fasynchronous-unwind-tables -Wall -fno-strict-aliasing
@@ -1075,7 +1075,7 @@ LIBSYSTEMD209_LIBS =
 LOCALSTATEDIR = /usr/local/var
 LOGFACILITY = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo
+MAKEINFO = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
 PACKAGE = tor
@@ -1116,10 +1116,10 @@ TOR_SYSTEMD_CFLAGS =
 TOR_SYSTEMD_LIBS = 
 TOR_ZLIB_LIBS = -lz
 VERSION = 0.2.7.2-alpha-dev
-abs_builddir = /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project
-abs_srcdir = /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project
-abs_top_builddir = /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project
-abs_top_srcdir = /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project
+abs_builddir = /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project
+abs_srcdir = /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project
+abs_top_builddir = /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project
+abs_top_srcdir = /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -1146,7 +1146,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/install-sh
+install_sh = ${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -6808,12 +6808,12 @@ src_config_fallback-consensus:
 # Generate the html documentation from asciidoc, but don't do
 # machine-specific replacements yet
 $(html_in) :
-	$(AM_V_GEN)$(top_srcdir)/doc/asciidoc-helper.sh html /usr/bin/asciidoc $(top_srcdir)/$@
+	$(AM_V_GEN)$(top_srcdir)/doc/asciidoc-helper.sh html none $(top_srcdir)/$@
 
 # Generate the manpage from asciidoc, but don't do
 # machine-specific replacements yet
 $(man_in) :
-	$(AM_V_GEN)$(top_srcdir)/doc/asciidoc-helper.sh man /usr/bin/a2x $(top_srcdir)/$@
+	$(AM_V_GEN)$(top_srcdir)/doc/asciidoc-helper.sh man none $(top_srcdir)/$@
 
 doc/tor.1.in: doc/tor.1.txt
 doc/torify.1.in: doc/torify.1.txt

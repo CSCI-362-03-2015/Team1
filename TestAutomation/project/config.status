@@ -145,7 +145,7 @@ as_fn_error ()
   as_status=$1; test $as_status -eq 0 && as_status=1
   if test "$4"; then
     as_lineno=${as_lineno-"$3"} as_lineno_stack=as_lineno_stack=$as_lineno_stack
-    $as_echo "$as_me:${as_lineno-$LINENO}: error: $2" >&$4
+    $as_echo "$as_me:${as_lineno-12757}: error: $2" >&$4
   fi
   $as_echo "$as_me: error: $2" >&2
   as_fn_exit $as_status
@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project'
+ac_pwd='/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -563,7 +563,7 @@ do
     "src/test/test_ntor.sh") CONFIG_FILES="$CONFIG_FILES src/test/test_ntor.sh" ;;
     "src/test/test_bt.sh") CONFIG_FILES="$CONFIG_FILES src/test/test_bt.sh" ;;
 
-  *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
+  *) as_fn_error $? "invalid argument: \`$ac_config_target'" "13208" 5;;
   esac
 done
 
@@ -602,7 +602,7 @@ $debug ||
 {
   tmp=./conf$$-$RANDOM
   (umask 077 && mkdir "$tmp")
-} || as_fn_error $? "cannot create a temporary directory in ." "$LINENO" 5
+} || as_fn_error $? "cannot create a temporary directory in ." "13247" 5
 ac_tmp=$tmp
 
 # Set up the scripts for CONFIG_FILES section.
@@ -634,7 +634,7 @@ S["LIBOBJS"]=""
 S["LOCALSTATEDIR"]="/usr/local/var"
 S["BINDIR"]="/usr/local/bin"
 S["CONFDIR"]="/usr/local/etc/tor"
-S["BUILDDIR"]="/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project"
+S["BUILDDIR"]="/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project"
 S["LOGFACILITY"]=""
 S["CURVE25519_LIBS"]=""
 S["BUILD_CURVE25519_DONNA_C64_FALSE"]="#"
@@ -682,8 +682,8 @@ S["USE_FW_HELPER_FALSE"]=""
 S["USE_FW_HELPER_TRUE"]="#"
 S["USE_ASCIIDOC_FALSE"]="#"
 S["USE_ASCIIDOC_TRUE"]=""
-S["A2X"]="/usr/bin/a2x"
-S["ASCIIDOC"]="/usr/bin/asciidoc"
+S["A2X"]="none"
+S["ASCIIDOC"]="none"
 S["SED"]="sed"
 S["PERL"]="/usr/bin/perl"
 S["RANLIB"]="ranlib"
@@ -744,12 +744,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/install-sh"
-S["MAKEINFO"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14"
-S["AUTOCONF"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14"
+S["install_sh"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/install-sh"
+S["MAKEINFO"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing automake-1.14"
+S["AUTOCONF"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/missing aclocal-1.14"
 S["VERSION"]="0.2.7.2-alpha-dev"
 S["PACKAGE"]="tor"
 S["CYGPATH_W"]="echo"
@@ -827,7 +827,7 @@ if sed "s/$ac_cr//" < /dev/null > /dev/null 2>&1; then
 else
   cat
 fi < "$ac_tmp/subs1.awk" > "$ac_tmp/subs.awk" \
-  || as_fn_error $? "could not setup config files machinery" "$LINENO" 5
+  || as_fn_error $? "could not setup config files machinery" "13379" 5
 fi # test -n "$CONFIG_FILES"
 
 # Set up the scripts for CONFIG_HEADERS section.
@@ -992,7 +992,7 @@ D["HAVE_GETHOSTBYNAME_R_6_ARG"]=" 1"
 D["HAVE_MACRO__func__"]=" 1"
 D["HAVE_MACRO__FUNCTION__"]=" 1"
 D["HAVE_EXTERN_ENVIRON_DECLARED"]=" 1"
-D["BUILDDIR"]=" \"/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project\""
+D["BUILDDIR"]=" \"/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project\""
 D["CONFDIR"]=" \"/usr/local/etc/tor\""
   for (key in D) D_is_set[key] = 1
   FS = ""
@@ -1026,7 +1026,7 @@ D["CONFDIR"]=" \"/usr/local/etc/tor\""
 }
 { print }
 _ACAWK
-  as_fn_error $? "could not setup config headers machinery" "$LINENO" 5
+  as_fn_error $? "could not setup config headers machinery" "13513" 5
 fi # test -n "$CONFIG_HEADERS"
 
 
@@ -1039,7 +1039,7 @@ do
   esac
   case $ac_mode$ac_tag in
   :[FHL]*:*);;
-  :L* | :C*:*) as_fn_error $? "invalid tag \`$ac_tag'" "$LINENO" 5;;
+  :L* | :C*:*) as_fn_error $? "invalid tag \`$ac_tag'" "13526" 5;;
   :[FH]-) ac_tag=-:-;;
   :[FH]*) ac_tag=$ac_tag:$ac_tag.in;;
   esac
@@ -1067,7 +1067,7 @@ do
 	   [\\/$]*) false;;
 	   *) test -f "$srcdir/$ac_f" && ac_f="$srcdir/$ac_f";;
 	   esac ||
-	   as_fn_error 1 "cannot find input file: \`$ac_f'" "$LINENO" 5;;
+	   as_fn_error 1 "cannot find input file: \`$ac_f'" "13554" 5;;
       esac
       case $ac_f in *\'*) ac_f=`$as_echo "$ac_f" | sed "s/'/'\\\\\\\\''/g"`;; esac
       as_fn_append ac_file_inputs " '$ac_f'"
@@ -1081,7 +1081,7 @@ do
 	`' by configure.'
     if test x"$ac_file" != x-; then
       configure_input="$ac_file.  $configure_input"
-      { $as_echo "$as_me:${as_lineno-$LINENO}: creating $ac_file" >&5
+      { $as_echo "$as_me:${as_lineno-13568}: creating $ac_file" >&5
 $as_echo "$as_me: creating $ac_file" >&6;}
     fi
     # Neutralize special characters interpreted by sed in replacement strings.
@@ -1094,7 +1094,7 @@ $as_echo "$as_me: creating $ac_file" >&6;}
 
     case $ac_tag in
     *:-:* | *:-) cat >"$ac_tmp/stdin" \
-      || as_fn_error $? "could not create $ac_file" "$LINENO" 5 ;;
+      || as_fn_error $? "could not create $ac_file" "13581" 5 ;;
     esac
     ;;
   esac
@@ -1189,7 +1189,7 @@ ac_sed_dataroot='
 case `eval "sed -n \"\$ac_sed_dataroot\" $ac_file_inputs"` in
 *datarootdir*) ac_datarootdir_seen=yes;;
 *@datadir@*|*@docdir@*|*@infodir@*|*@localedir@*|*@mandir@*)
-  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $ac_file_inputs seems to ignore the --datarootdir setting" >&5
+  { $as_echo "$as_me:${as_lineno-13679}: WARNING: $ac_file_inputs seems to ignore the --datarootdir setting" >&5
 $as_echo "$as_me: WARNING: $ac_file_inputs seems to ignore the --datarootdir setting" >&2;}
   ac_datarootdir_hack='
   s&@datadir@&${datarootdir}&g
@@ -1233,13 +1233,13 @@ s&@MKDIR_P@&$ac_MKDIR_P&;t t
 $ac_datarootdir_hack
 "
 eval sed \"\$ac_sed_extra\" "$ac_file_inputs" | $AWK -f "$ac_tmp/subs.awk" \
-  >$ac_tmp/out || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+  >$ac_tmp/out || as_fn_error $? "could not create $ac_file" "13718" 5
 
 test -z "$ac_datarootdir_hack$ac_datarootdir_seen" &&
   { ac_out=`sed -n '/\${datarootdir}/p' "$ac_tmp/out"`; test -n "$ac_out"; } &&
   { ac_out=`sed -n '/^[	 ]*datarootdir[	 ]*:*=/p' \
       "$ac_tmp/out"`; test -z "$ac_out"; } &&
-  { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: $ac_file contains a reference to the variable \`datarootdir'
+  { $as_echo "$as_me:${as_lineno-13724}: WARNING: $ac_file contains a reference to the variable \`datarootdir'
 which seems to be undefined.  Please make sure it is defined" >&5
 $as_echo "$as_me: WARNING: $ac_file contains a reference to the variable \`datarootdir'
 which seems to be undefined.  Please make sure it is defined" >&2;}
@@ -1249,7 +1249,7 @@ which seems to be undefined.  Please make sure it is defined" >&2;}
   -) cat "$ac_tmp/out" && rm -f "$ac_tmp/out";;
   *) rm -f "$ac_file" && mv "$ac_tmp/out" "$ac_file";;
   esac \
-  || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+  || as_fn_error $? "could not create $ac_file" "13734" 5
  ;;
   :H)
   #
@@ -1260,19 +1260,19 @@ which seems to be undefined.  Please make sure it is defined" >&2;}
       $as_echo "/* $configure_input  */" \
       && eval '$AWK -f "$ac_tmp/defines.awk"' "$ac_file_inputs"
     } >"$ac_tmp/config.h" \
-      || as_fn_error $? "could not create $ac_file" "$LINENO" 5
+      || as_fn_error $? "could not create $ac_file" "13745" 5
     if diff "$ac_file" "$ac_tmp/config.h" >/dev/null 2>&1; then
-      { $as_echo "$as_me:${as_lineno-$LINENO}: $ac_file is unchanged" >&5
+      { $as_echo "$as_me:${as_lineno-13747}: $ac_file is unchanged" >&5
 $as_echo "$as_me: $ac_file is unchanged" >&6;}
     else
       rm -f "$ac_file"
       mv "$ac_tmp/config.h" "$ac_file" \
-	|| as_fn_error $? "could not create $ac_file" "$LINENO" 5
+	|| as_fn_error $? "could not create $ac_file" "13752" 5
     fi
   else
     $as_echo "/* $configure_input  */" \
       && eval '$AWK -f "$ac_tmp/defines.awk"' "$ac_file_inputs" \
-      || as_fn_error $? "could not create -" "$LINENO" 5
+      || as_fn_error $? "could not create -" "13757" 5
   fi
 # Compute "$ac_file"'s index in $config_headers.
 _am_arg="$ac_file"
@@ -1310,7 +1310,7 @@ $as_echo X"$_am_arg" |
 	  s/.*/./; q'`/stamp-h$_am_stamp_count
  ;;
 
-  :C)  { $as_echo "$as_me:${as_lineno-$LINENO}: executing $ac_file commands" >&5
+  :C)  { $as_echo "$as_me:${as_lineno-13795}: executing $ac_file commands" >&5
 $as_echo "$as_me: executing $ac_file commands" >&6;}
  ;;
   esac

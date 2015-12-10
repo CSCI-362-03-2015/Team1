@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>16
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
 </td></tr><tr><td>Component being tested: </td><td>util.c
@@ -6,10 +7,21 @@
 </td></tr><tr><td>Expected output: </td><td>9223372036854775807
 </td></tr><tr><td>the outcome was: </td><td>0</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>19
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+=======
+<style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>15
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
 </td></tr><tr><td>Component being tested: </td><td>util.c
-</td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
-</td></tr><tr><td>Inputs used for testing: </td><td>e,,
+</td></tr><tr><td>Method being tested: </td><td>int64_t tor_llround(double d)
+</td></tr><tr><td>Inputs used for testing: </td><td>-0.1,,
+</td></tr><tr><td>Expected output: </td><td>0
+</td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>8
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>static int digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>11,,
 </td></tr><tr><td>Expected output: </td><td>error
+<<<<<<< HEAD
 </td></tr><tr><td><b> <font color="red">results in a segmentation fault</font></b></td></td></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>25
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Given the mask comes to the edge of a 32 bit hexidecimal, the method will return 32
 </td></tr><tr><td>Component being tested: </td><td>address.c
@@ -18,22 +30,54 @@
 </td></tr><tr><td>Expected output: </td><td>32
 </td></tr><tr><td>the outcome was: </td><td>-1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>6
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure given an input of 0, we receive default output of 1
+=======
+</td></tr><tr><td>the outcome was: </td><td>1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>14
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>int64_t tor_llround(double d)
+</td></tr><tr><td>Inputs used for testing: </td><td>5.3,,
+</td></tr><tr><td>Expected output: </td><td>5
+</td></tr><tr><td>The outcome was: </td><td>5</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>5
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure the function can return correct power of 2 of a negative integer
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>uint64_t round_to_power_of_2(uint64_t u64)
-</td></tr><tr><td>Inputs used for testing: </td><td>0,,
+</td></tr><tr><td>Inputs used for testing: </td><td>-255,,
+</td></tr><tr><td>Expected output: </td><td>-256
+</td></tr><tr><td>the outcome was: </td><td>-9223372036854775808</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>11
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>checks if a string has any uppercase letters, returns 0 if it does
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>int tor_strisnonupper(const char *s)
+</td></tr><tr><td>Inputs used for testing: </td><td>apple,,
 </td></tr><tr><td>Expected output: </td><td>1
 </td></tr><tr><td>The outcome was: </td><td>1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>10
+<<<<<<< HEAD
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+=======
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>static int digit_to_num(char d)
 </td></tr><tr><td>Inputs used for testing: </td><td>a,,
 </td></tr><tr><td>Expected output: </td><td>error
+<<<<<<< HEAD
 </td></tr><tr><td><b> <font color="red">results in a segmentation fault</font></b></td></td></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>23
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure that given input of 0 the method returns 0 bits
+=======
+</td></tr><tr><td>the outcome was: </td><td>1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>24
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Ensuring that given invalid input, the method returns -1
+</td></tr><tr><td>Component being tested: </td><td>address.c
+</td></tr><tr><td>Method being tested: </td><td>int addr_mask_get_bits(uint32_t mask)
+</td></tr><tr><td>Inputs used for testing: </td><td>0x04A099B23,, 
+</td></tr><tr><td>Expected output: </td><td>-1
+</td></tr><tr><td>The outcome was: </td><td>-1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>23
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure that given input of 0 the method returns 0 bits
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>address.c
 </td></tr><tr><td>Method being tested: </td><td>int addr_mask_get_bits(uint32_t mask)
 </td></tr><tr><td>Inputs used for testing: </td><td>0,, 
 </td></tr><tr><td>Expected output: </td><td>0
+<<<<<<< HEAD
 </td></tr><tr><td>the outcome was: </td><td>-1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>5
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure the function can return correct power of 2 of a negative integer
 </td></tr><tr><td>Component being tested: </td><td>util.c
@@ -42,34 +86,88 @@
 </td></tr><tr><td>Expected output: </td><td>8
 </td></tr><tr><td>the outcome was: </td><td>4</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>1
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>ensuring the correct output, the next multiple of the divisor from the number
+=======
+</td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>18
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>3,,
+</td></tr><tr><td>Expected output: </td><td>3
+</td></tr><tr><td>The outcome was: </td><td>3</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>1
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>ensuring the correct output, the next multiple of the divisor from the number
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>unsigned round_to_next_multiple_of(unsigned number, unsigned divisor)
 </td></tr><tr><td>Inputs used for testing: </td><td>13,4,
 </td></tr><tr><td>Expected output: </td><td>16
+<<<<<<< HEAD
 </td></tr><tr><td>the outcome was: </td><td>0</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>20
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+=======
+</td></tr><tr><td>The outcome was: </td><td>16</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>4
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure basic functionality of the method being able to compute a power of 2 where the exponent is not 0, 62, or 63
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>uint64_t round_to_power_of_2(uint64_t u64)
+</td></tr><tr><td>Inputs used for testing: </td><td>4244967300,,
+</td></tr><tr><td>Expected output: </td><td>4294967296
+</td></tr><tr><td>The outcome was: </td><td>4294967296</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>21
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
-</td></tr><tr><td>Inputs used for testing: </td><td>-1,,
+</td></tr><tr><td>Inputs used for testing: </td><td>,,
 </td></tr><tr><td>Expected output: </td><td>error
+<<<<<<< HEAD
 </td></tr><tr><td><b> <font color="red">results in a segmentation fault</font></b></td></td></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>11
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>checks if a string has any uppercase letters, returns 0 if it does
+=======
+</td></tr><tr><td>the outcome was: </td><td>3</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>22
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
-</td></tr><tr><td>Method being tested: </td><td>int tor_strisnonupper(const char *s)
-</td></tr><tr><td>Inputs used for testing: </td><td>apple,,
+</td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>90,,
+</td></tr><tr><td>Expected output: </td><td>error
+</td></tr><tr><td>the outcome was: </td><td>9</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>9
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>static int digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>1,,
 </td></tr><tr><td>Expected output: </td><td>1
+<<<<<<< HEAD
 </td></tr><tr><td>The outcome was: </td><td>1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>12
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>checks if a string has any uppercase letters, returns 0 if it does
+=======
+</td></tr><tr><td>The outcome was: </td><td>1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>3
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure the function properly rolls over past (2^63 - 1) given the integer exceeds 2^62
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>uint64_t round_to_power_of_2(uint64_t u64)
+</td></tr><tr><td>Inputs used for testing: </td><td>8223372036854776000,,
+</td></tr><tr><td>Expected output: </td><td>-9223372036854775808
+</td></tr><tr><td>The outcome was: </td><td>-9223372036854775808</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>7
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>static int digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>-1,,
+</td></tr><tr><td>Expected output: </td><td>error
+</td></tr><tr><td>the outcome was: </td><td>1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>12
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>checks if a string has any uppercase letters, returns 0 if it does
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>int tor_strisnonupper(const char *s)
 </td></tr><tr><td>Inputs used for testing: </td><td>Apple,,
 </td></tr><tr><td>Expected output: </td><td>0
 </td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>17
+<<<<<<< HEAD
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
+=======
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:33 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>int64_t tor_llround(double d)
 </td></tr><tr><td>Inputs used for testing: </td><td>18446744073709551616,,
 </td></tr><tr><td>Expected output: </td><td>18446744073709551616
+<<<<<<< HEAD
 </td></tr><tr><td>the outcome was: </td><td>0</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>22
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
 </td></tr><tr><td>Component being tested: </td><td>util.c
@@ -90,10 +188,27 @@
 </td></tr><tr><td>Expected output: </td><td>0
 </td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>7
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>given a char, return the char's numeric value
+=======
+</td></tr><tr><td>the outcome was: </td><td>0</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>25
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Given the mask comes to the edge of a 32 bit hexidecimal, the method will return 32
+</td></tr><tr><td>Component being tested: </td><td>address.c
+</td></tr><tr><td>Method being tested: </td><td>int addr_mask_get_bits(uint32_t mask)
+</td></tr><tr><td>Inputs used for testing: </td><td>0xFFFFFFFFu,, 
+</td></tr><tr><td>Expected output: </td><td>32
+</td></tr><tr><td>The outcome was: </td><td>32</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>6
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>To ensure given an input of 0, we receive default output of 1
 </td></tr><tr><td>Component being tested: </td><td>util.c
-</td></tr><tr><td>Method being tested: </td><td>static int digit_to_num(char d)
+</td></tr><tr><td>Method being tested: </td><td>uint64_t round_to_power_of_2(uint64_t u64)
+</td></tr><tr><td>Inputs used for testing: </td><td>0,,
+</td></tr><tr><td>Expected output: </td><td>1
+</td></tr><tr><td>The outcome was: </td><td>1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>20
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
 </td></tr><tr><td>Inputs used for testing: </td><td>-1,,
 </td></tr><tr><td>Expected output: </td><td>error
+<<<<<<< HEAD
 </td></tr><tr><td>the outcome was: </td><td>9</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>13
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:56 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
 </td></tr><tr><td>Component being tested: </td><td>util.c
@@ -132,10 +247,33 @@
 </td></tr><tr><td>Expected output: </td><td>1
 </td></tr><tr><td>The outcome was: </td><td>1</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>2
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:57 2015</td></tr><tr><td>requirement being tested: </td><td>Testing round_to_next_multiple_of to ensure correct input
+=======
+</td></tr><tr><td>the outcome was: </td><td>1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>19
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>digit_to_num(char d)
+</td></tr><tr><td>Inputs used for testing: </td><td>e,,
+</td></tr><tr><td>Expected output: </td><td>error
+</td></tr><tr><td>the outcome was: </td><td>1</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>16
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>int64_t tor_llround(double d)
+</td></tr><tr><td>Inputs used for testing: </td><td>18446744073709551616,,
+</td></tr><tr><td>Expected output: </td><td>9223372036854775807
+</td></tr><tr><td>the outcome was: </td><td>0</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>13
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Testing tor_llround to ensure correct results
+</td></tr><tr><td>Component being tested: </td><td>util.c
+</td></tr><tr><td>Method being tested: </td><td>int64_t tor_llround(double d)
+</td></tr><tr><td>Inputs used for testing: </td><td>5.6,,
+</td></tr><tr><td>Expected output: </td><td>6
+</td></tr><tr><td>The outcome was: </td><td>6</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>2
+</td></tr><tr><td>Time stamp: </td><td>Mon Nov 30 22:10:34 2015</td></tr><tr><td>requirement being tested: </td><td>Testing round_to_next_multiple_of to ensure correct input
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6
 </td></tr><tr><td>Component being tested: </td><td>util.c
 </td></tr><tr><td>Method being tested: </td><td>unsgined round_to_next_multiple_of(unsinged number, unsigned divisor)
 </td></tr><tr><td>Inputs used for testing: </td><td>0,42,
 </td></tr><tr><td>Expected output: </td><td>0
+<<<<<<< HEAD
 </td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br><style>table, th, td {border: 1px solid black;}</style><table><tr><td>Test ID: </td><td>18
 </td></tr><tr><td>Time stamp: </td><td>Thu Dec 10 10:50:57 2015</td></tr><tr><td>requirement being tested: </td><td>Testing digit_to_num to ensure correct results
 </td></tr><tr><td>Component being tested: </td><td>util.c
@@ -149,3 +287,6 @@
 </td></tr><tr><td>Inputs used for testing: </td><td>9223372036854776000,,
 </td></tr><tr><td>Expected output: </td><td>63
 </td></tr><tr><td>the outcome was: </td><td>62</td></tr><tr><td>The test <font color="red">failed</font></td></tr></table><br>
+=======
+</td></tr><tr><td>The outcome was: </td><td>0</td></tr><tr><td>The test  <font color="green">passed</font></td></tr></table><br>
+>>>>>>> 57d37d63fbbd9e1dff7a7096cb8652fa928930b6

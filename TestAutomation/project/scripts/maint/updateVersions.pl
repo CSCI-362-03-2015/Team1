@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
 
-$CONFIGURE_IN = '/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/configure.ac';
-$ORCONFIG_H = '/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/src/win32/orconfig.h';
-$TOR_NSI = '/home/mister/Documents/362/Git/theMonkeyCatfishCoalition/TestAutomation/project/contrib/win32build/tor-mingw.nsi.in';
+$CONFIGURE_IN = '/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/configure.ac';
+$ORCONFIG_H = '/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/src/win32/orconfig.h';
+$TOR_NSI = '/home/aaron/theMonkeyCatfishCoalition/TestAutomation/project/contrib/win32build/tor-mingw.nsi.in';
 
 $quiet = 1;
 

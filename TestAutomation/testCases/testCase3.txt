@@ -1,7 +1,7 @@
 3
-To ensure the function can properly round down to nearest log base 2 of a 64 bit integer given the integer slightly exceeds 2^63
+To ensure the function properly rolls over past (2^63 - 1) given the integer exceeds 2^62
 util.c
 uint64_t round_to_power_of_2(uint64_t u64)
-9223372036854776000,,
-63
+8223372036854776000,,
+-9223372036854775808
 3

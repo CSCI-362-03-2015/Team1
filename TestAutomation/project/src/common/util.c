@@ -473,9 +473,15 @@ round_to_power_of_2(uint64_t u64)
   uint64_t high;
   if (u64 == 0)
     return 1;
-/*FAULT BELOW :: switched lg2 and low variables. */
+  
+  lg2 = tor_log2(u64);
+  low = U64_LITERAL(1) << lg2;
+/*FAULT BELOW :: uncomment to initiate fault:: switched lg2 and low variables.*/
+
+  /*
   low = tor_log2(u64);
-  lg2 = U64_LITERAL(1) << lg2;
+  lg2 = U64_LITERAL(1) << lg2;*/
+  
 
   if (lg2 == 63)
     return low; 
@@ -493,8 +499,8 @@ round_to_power_of_2(uint64_t u64)
 unsigned
 round_to_next_multiple_of(unsigned number, unsigned divisor)
 {
-  /*number += divisor - 1; fault below*/
-  number = divisor - 1;
+  /*FAULT :: comment or remove the "+" from line below to initiate fault*/
+  number += divisor - 1; 
   number -= number % divisor;
   return number;
 }
